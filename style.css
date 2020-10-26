@@ -1,1 +1,10 @@
-
+.grid {
+    width: 120px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+.cell {
+    width: 33%;
+    display: flex;
+}

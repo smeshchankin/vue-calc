@@ -10,9 +10,9 @@
     <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-    <div id="app">
-        <h1>{{title}}</h1>
-        <input type="text" v-model="result" placeholder="0" />
+    <div id="app" class="app">
+        <h1 class="title">{{title}}</h1>
+        <input type="text" v-model="result" placeholder="0" class="result" />
         <div class="grid">
             <button v-for="num in numbers" class="cell">{{num}}</button>
         </div>

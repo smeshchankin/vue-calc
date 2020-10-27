@@ -14,10 +14,10 @@
         <h1 class="title">{{title}}</h1>
         <input type="text" v-model="result" placeholder="0" class="result" />
         <div class="grid">
-            <button v-for="num in numbers" class="cell">{{num}}</button>
-            <button v-for="op in operations" class="cell">{{op}}</button>
-            <button class="cell">C</button>
-            <button class="cell">=</button>
+            <button v-for="num in numbers" v-on:click="input(num)" class="cell">{{num}}</button>
+            <button v-for="op in operations" v-on:click="input(op)" class="cell">{{op}}</button>
+            <button v-on:click="reset" class="cell">C</button>
+            <button v-on:click="calc" class="cell">=</button>
         </div>
     </div>
 </body>

@@ -16,7 +16,7 @@
                 this.result = '';
             },
             calc: function() {
-                this.result = eval(this.result);
+                this.result = eval(this.result).toString();
             }
         }
     };

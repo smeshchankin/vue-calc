@@ -12,7 +12,7 @@
 <body>
     <div id="app" class="app">
         <h1 class="title">{{title}}</h1>
-        <input type="text" v-model="result" placeholder="0" class="result" />
+        <input @keyup.enter="calc" type="text" v-model="result" placeholder="0" class="result" />
         <div class="grid">
             <button v-for="num in numbers" @click="input(num)" class="cell">{{num}}</button>
             <button v-for="op in operations" @click="input(op)" class="cell">{{op}}</button>
